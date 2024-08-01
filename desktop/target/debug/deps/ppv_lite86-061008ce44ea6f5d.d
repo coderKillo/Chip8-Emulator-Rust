@@ -1,0 +1,9 @@
+/home/killo/workspace/rust/chip8/desktop/target/debug/deps/libppv_lite86-061008ce44ea6f5d.rmeta: /home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/lib.rs /home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/soft.rs /home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/types.rs /home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/x86_64/mod.rs /home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/x86_64/sse2.rs
+
+/home/killo/workspace/rust/chip8/desktop/target/debug/deps/ppv_lite86-061008ce44ea6f5d.d: /home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/lib.rs /home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/soft.rs /home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/types.rs /home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/x86_64/mod.rs /home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/x86_64/sse2.rs
+
+/home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/lib.rs:
+/home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/soft.rs:
+/home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/types.rs:
+/home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/x86_64/mod.rs:
+/home/killo/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.18/src/x86_64/sse2.rs:
