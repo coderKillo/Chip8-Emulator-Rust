@@ -33,7 +33,7 @@ pub struct Emulator {
     pc: u16, // program counter
     ram: [u8; RAM_SIZE],
     display: [bool; SCREEN_WIDTH * SCREEN_HEIGHT],
-    v_reg: [u8; 0xF],
+    v_reg: [u8; 16],
     i_reg: u16,
     sp: u16, // stack pointer
     stack: [u16; STACK_SIZE],
@@ -50,7 +50,7 @@ impl Emulator {
             pc: START_ADDRESS,
             ram: [0; RAM_SIZE],
             display: [false; SCREEN_WIDTH * SCREEN_HEIGHT],
-            v_reg: [0; 0xF],
+            v_reg: [0; 16],
             i_reg: 0,
             sp: 0,
             stack: [0; STACK_SIZE],
@@ -93,7 +93,7 @@ impl Emulator {
         self.pc = START_ADDRESS;
         self.ram = [0; RAM_SIZE];
         self.display = [false; SCREEN_WIDTH * SCREEN_HEIGHT];
-        self.v_reg = [0; 0xF];
+        self.v_reg = [0; 16];
         self.i_reg = 0;
         self.sp = 0;
         self.stack = [0; STACK_SIZE];
@@ -242,7 +242,7 @@ impl Emulator {
             }
             (0xA, _, _, _) => {
                 let nnn = operation & 0x0FFF;
-                self.i_reg = nnn
+                self.i_reg = nnn;
             }
             (0xB, _, _, _) => {
                 let nnn = operation & 0x0FFF;
@@ -321,7 +321,7 @@ impl Emulator {
             }
             (0xF, _, 1, 0xE) => {
                 let x = digit2 as usize;
-                self.i_reg += self.i_reg.wrapping_add(self.v_reg[x] as u16);
+                self.i_reg = self.i_reg.wrapping_add(self.v_reg[x] as u16);
             }
             (0xF, _, 2, 9) => {
                 let x = digit2 as usize;
